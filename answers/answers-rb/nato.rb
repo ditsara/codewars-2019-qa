@@ -1,0 +1,21 @@
+name = %(
+KRUNGTHEPMAHANAKHONAMONRATTANAKOSINMAHINTHARAYUTTHAYAMAHADILOKPHOPNOPPHARATRATCHATHANIBURIROMUDOMRATCHANIWETMAHASATHANAMONPHIMANAWATANSATHITSAKKATHATTIYAWITSANUKAMPRASIT
+)
+
+nato = [
+"ALFA", "BRAVO", "CHARLIE", "DELTA", "ECHO", "FOXTROT", "GOLF", "HOTEL",
+"INDIA", "JULIETT", "KILO", "LIMA", "MIKE", "NOVEMBER", "OSCAR", "PAPA",
+"QUEBEC", "ROMEO", "SIERRA", "TANGO", "UNIFORM", "VICTOR", "WHISKEY",
+"XRAY", "YANKEE", "ZULU"
+].map do |alpha|
+  ch = alpha.split('')[0]
+  [ch, alpha]
+end.to_h
+
+spelled_in_nato = name.split('').map do |ch|
+  nato[ch]
+end.join
+
+puts spelled_in_nato.length
+
+# 853
