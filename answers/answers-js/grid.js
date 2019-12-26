@@ -1,5 +1,5 @@
 const fs = require("fs")
-data = fs.readFileSync("directions.txt","ascii")
+data = fs.readFileSync("../../questions/grid/directions.txt","ascii")
 const lines = data.split("\n")
 let x = 0, y = 0
 for (let line of lines) {
