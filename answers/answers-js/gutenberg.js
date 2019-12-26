@@ -25,7 +25,7 @@ const letters = {a: 35,
  z: 2}
 let pageLetters = {...letters}
 const a2z = Object.keys(letters)
-const beowulf = fs.readFileSync("../questions/gutenberg/beowulf.txt","ascii").split("").map(c => c.toLowerCase()).filter(c => a2z.includes(c))
+const beowulf = fs.readFileSync("../../questions/gutenberg/beowulf.txt","ascii").split("").map(c => c.toLowerCase()).filter(c => a2z.includes(c))
 let pages = 1
 let index = -1
 while (index<beowulf.length) {

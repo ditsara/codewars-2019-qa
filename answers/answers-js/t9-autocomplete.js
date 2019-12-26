@@ -8,7 +8,7 @@ let dict = {"2":"ABC",
 "8":"TUV",
 "9":"WXYZ"}
 let contacts = []
-let data = fs.readFileSync("../questions/t9-autocomplete/contacts.txt","ascii")
+let data = fs.readFileSync("../../questions/t9-autocomplete/contacts.txt","ascii")
 for (let row of data.split("\n")) {
   let name = row.substr(0, 23).trim()
   let phone = row.substr(23)

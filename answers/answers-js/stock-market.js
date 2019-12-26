@@ -1,5 +1,5 @@
 const fs = require("fs")
-const stocks = fs.readFileSync("../questions/stock-market/sp500.txt","ascii").split("\n")
+const stocks = fs.readFileSync("../../questions/stock-market/sp500.txt","ascii").split("\n")
 const days = 60
 let vals = []
 for (let row of stocks) {
