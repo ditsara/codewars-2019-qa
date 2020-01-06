@@ -1,0 +1,7 @@
+First run
+
+`npm install`
+
+to install Moment library, then run
+
+`node time-machine.js`
